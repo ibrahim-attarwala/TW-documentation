@@ -1,0 +1,28 @@
+% Indexing and Bibliography Citations Example
+\documentclass[12pt]{article}
+\usepackage{makeidx}
+\makeindex
+
+\begin{document}
+
+\section*{Error Troubleshooting Strategy}
+When LaTeX encounters an error, it provides a line number and a descriptive error message in the log file (e.g., \texttt{Undefined control sequence} or \texttt{Too many columns in tabular}). 
+\index{Debugging!Error Logs}
+
+\section*{Subject Indexing}
+Important terms in large documents can be indexed automatically using the makeidx package. For example, we can index LaTeX commands\index{LaTeX!Commands} and compilation steps\index{Compilation}.
+
+\section*{References and Citations}
+Academic and technical documents rely on BibTeX for reference management. A typical citation looks like this: as explained by Lamport \cite{lamport}.
+\index{Bibliographies!BibTeX}
+
+\begin{thebibliography}{9}
+\bibitem{lamport}
+Leslie Lamport,
+\emph{LaTeX: A Document Preparation System},
+Addison-Wesley, 1994.
+\end{thebibliography}
+
+\printindex
+
+\end{document}

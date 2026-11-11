@@ -1,0 +1,38 @@
+% Custom Geometry, Fancy Headers, Lists, and Box Manipulation
+\documentclass[12pt, a4paper]{article}
+\usepackage{geometry}
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Advanced Layouts Module}
+\fancyhead[R]{\today}
+\fancyfoot[C]{Page \thepage}
+
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\begin{document}
+
+\section*{Customized List Spacing}
+\begin{itemize}[label=$\bullet$, leftmargin=*]
+\item Custom bullet item with modified left margin indentation.
+\item Second item demonstrating clean spacing.
+\end{itemize}
+
+\section*{Box Manipulations}
+\noindent
+\framebox[6cm][c]{Framed Box (Centered text)}
+
+\vspace{0.5cm}
+\noindent
+\parbox{8cm}{
+This is a paragraph box with a fixed width of 8 centimeters. Text wraps automatically inside the box boundaries, making it useful for side-by-side layouts.
+}
+
+\vspace{0.5cm}
+\noindent
+\rule{10cm}{0.5pt} % Horizontal rule separator
+
+\end{document}
