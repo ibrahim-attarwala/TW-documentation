@@ -1,0 +1,29 @@
+% Figures, Colors, and Native Vector Graphics
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\definecolor{customblue}{RGB}{20,80,160}
+
+\begin{document}
+
+\section*{Colors and Highlights}
+We can apply \textcolor{customblue}{custom colored text}, highlight important notes using \colorbox{yellow}{background highlights}, or draw framed critical labels: \fcolorbox{red}{white}{Alert Label}.
+
+\section*{Native Vector Drawing (Picture Environment)}
+The picture environment allows drawing basic geometric shapes and coordinate axes programmatically:
+
+\setlength{\unitlength}{1cm}
+\begin{centering}
+\begin{picture}(6,4)
+\put(0,0){\vector(1,0){5}}
+\put(0,0){\vector(0,1){4}}
+\put(2,2){\circle{1.5}}
+\put(2,2){\circle*{0.2}}
+\put(2.2,2.2){\makebox(0,0)[l]{Center (2,2)}}
+\qbezier(0,0)(2.5,4)(5,0)
+\end{picture}
+\par
+\end{centering}
+
+\end{document}

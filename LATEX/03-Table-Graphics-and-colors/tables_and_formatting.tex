@@ -1,0 +1,34 @@
+% Custom Tables, Merged Cells, Positioning, and Coloring
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+\begin{document}
+
+\section*{Structured Tables}
+The following table demonstrates custom column alignment, borders, merged cells, and custom coloring:
+
+\begin{table}[h!]
+\centering
+\setlength{\arrayrulewidth}{0.4mm}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{2.5cm}|c|c|}
+\hline
+\rowcolor{green!30}
+\multicolumn{3}{|c|}{\textbf{Student Performance Summary}} \\ \hline
+\rowcolor{gray!20}
+\textbf{Subject} & \textbf{Grade} & \textbf{Status} \\ \hline
+Mathematics & A+ & \cellcolor{yellow!30}Passed \\ \hline
+\multirow{2}{*}{Computer Science} & A & Passed \\ 
+ & B+ & \cellcolor{orange!30}Review \\ \hline
+\end{tabular}
+\caption{Table to test captions, multi-row cells, and row coloring.}
+\label{tab:performance}
+\end{table}
+
+See Table~\ref{tab:performance} for detailed grade allocations.
+
+\end{document}
