@@ -1,0 +1,40 @@
+\documentclass{article}
+
+\pagestyle{plain}
+
+\begin{document}
+	
+	\section*{Text Alignment and Sizing}
+	
+	\begin{center}
+		{\Huge Centered Large Title} \\
+		{\small Subtitle or secondary detail}
+	\end{center}
+	
+	\section*{Special Characters and Comments}
+	Escaped characters: \$100, 50\%, \#1, \_variable, and \{braces\}.
+	
+	\section*{Lists Demonstration}
+	
+	\subsection*{Itemized List}
+	\begin{itemize}
+		\item First bullet point item
+		\item Second bullet point item
+	\end{itemize}
+	
+	\subsection*{Enumerated List}
+	\begin{enumerate}
+		\item Step one
+		\item Step two
+	\end{enumerate}
+	
+	\subsection*{Description List}
+	\begin{description}
+		\item[LaTeX] Typesetting system.
+		\item[Overleaf] Online collaborative editor.
+	\end{description}
+	
+	\newpage
+	This text appears on a new page after a manual page break.
+	
+\end{document}
